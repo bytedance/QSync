@@ -1,0 +1,6 @@
+[submodule "3rd_party/transformers"]
+	path = 3rd_party/transformers
+	url = https://github.com/huggingface/transformers.git
+[submodule "3rd_party/dpro"]
+	path = 3rd_party/dpro
+	url = https://github.com/joapolarbear/dpro.git

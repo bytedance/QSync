@@ -1,0 +1,1 @@
+python3 analyse.py --device_name 't4' --bit $1 --model_name $2 --file_name $3

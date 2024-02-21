@@ -124,6 +124,8 @@ def compute_with_variance(name_to_module_mapper, available_bits, gamma, RD, mode
     omega_matrix = []
     omega_dict = {}
     idx = 0
+    if isinstance(RD, np.ndarray):
+        RD = RD.item()
     for layer_name, RD_value in RD.items():
         layer = name_to_module_mapper[layer_name]
         layer_grad = layer.weight.grad if hasattr(layer, 'weight') else None 
@@ -228,7 +230,7 @@ def increase_with_step(increase_h, gap_column, step, reduce_h, incre_temp_h, dec
             if new_val < 0:
                 update_idx.append([row, new_bit])
                 item = hq.heappushpop(increase_h, (gap_val, row, new_bit))
-                temp_h.append(biggest)
+                decre_temp_h.append(biggest)
             # decrement, (we don't care this siutation), remove the idx
             else:
                 hq.heappop(increase_h)

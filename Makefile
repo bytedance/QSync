@@ -22,9 +22,6 @@ cutlass-linear:
 pool:
 	cd pytorch/int8pool-extension; pip3 install .
 
-ssdc:
-	cd pytorch/ssdc; pip3 install .
-
 other_extension:
 	cd pytorch/other_extension; pip3 install .
 

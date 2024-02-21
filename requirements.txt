@@ -16,7 +16,7 @@ accelerate
 datasets 
 tensorboardX
 regex 
-tokenizers==0.12.1 
+tokenizers==0.9.4
 accelerate
 tensorflow
 transformers

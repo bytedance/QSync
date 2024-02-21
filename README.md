@@ -6,7 +6,8 @@ QSync aims to explore the potential of removing unnecessary quantized operations
 - Quantization perturbation indicator/Replayer for analyzing the global data flow graph's memory and latency under mixed-precision (Predictor)
 - Allocator for selecting the optimal quantized operations for training (Allocator / Syncer)
 - Support for low-precision backends (CUTLASS, CUDNN) (LP-PyTorch)
-In particular, QSync addresses a specific practical scenario: hybrid-cluster training, which involves an inference GPU with power capabilities (memory, compute) and a training GPU with higher capabilities.
+
+In particular, QSync addresses a specific practical scenario: hybrid-cluster training, which involves inference GPUs with power capabilities (memory, compute) and training GPUs with higher capabilities.
 
 The provided scripts support both convolution-based and transformer-based models.
 

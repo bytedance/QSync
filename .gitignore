@@ -48,3 +48,6 @@ trace.json
 .keras/
 .local/
 */__pycache__/
+
+# but allow files / folders under ref_bitplans, include npy files
+!/ref_bitplans/**
